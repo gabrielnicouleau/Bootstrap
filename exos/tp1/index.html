@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet Netflix fork</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- <style>
+    .carousel-item {
+      display: flex;
+      justify-content: center;
+    }
+
+    .carousel-item img {
+      width: 150px;
+      height: 220px;
+      margin: 0 10px;
+    }
+  </style> -->
+
+</head>
+<body class="bg-black">
+  <!--DAYAN HEADER-->
+  <header class="sticky-top bg-black">
+    <nav class="navbar navbar-expand-lg navbar-black bg-black">
+      <img src="animeflix-Photoroom.png" alt="ANIMEFLIX">
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item active">
+            <a class="nav-link fs-4 me-5" href="Films.html">Films <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link fs-4 me-5" href="#">Anime <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link fs-4 me-5" href="#">Scans <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link fs-4 me-5" href="#">My List <span class="sr-only"></span></a>
+          </li>
+        </ul>
+       <!--  split categories dropdown button -->
+          <div class="btn-group">
+              <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </button>
+              <ul class="dropdown-menu bg-black">
+                  <li><a class="dropdown-item text-light" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Adventure</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Comedy</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Drama</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Ecchi</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Fantasy</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Horror</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Isekai</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Josei</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Mystery</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Psycologic</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Romance</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Seinen</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Shonen</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Shojo</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Sport</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Webcomic</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Yaoi</a></li>
+              </ul>
+          </div>
+          <form class="d-flex mx-2">
+            <input class="form-control me-1" type="search" placeholder="Q" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <div class="dropdown d-flex justify-content-end me-5 mt-2">
+            <button class="btn btn-secondary dropdown-toggle border border-dark rounded bg-black bg-image ripple" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="goku.jpg" alt="image">
+            </button>
+            <ul class="dropdown-menu bg-black border border-dark rounded">
+              <li><a class="dropdown-item text-white-50 text-center fs-5" href="#">My account</a></li>
+              <li><a class="dropdown-item text-white-50 text-center fs-5" href="#">Settings</a></li>
+              <li><a class="dropdown-item text-white-50 text-center fs-5" href="#">Disconnect</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--QUENTIN & JUJU body-->
+  <main class="bg-black mb-2 pb-3">
+    <div class="ratio ratio-16x9 w-100">
+      <video src="video8k.mp4" type="video/mp4" autoplay muted loop></video>
+    </div>
+      
+    <!--PREMIER CAROUSSEL Isekai-->
+<!-- SLIDER-->
+    <div class="container">
+      <h1 class="text-light"><b>Isekai</b></h1>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <section class="d-flex justify-content-around">
+              <!-- Card-->
+              <div class="card bg-dark text-white me-2">
+                <img src="isekai1.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+                <div class="card-body">
+                <h5 class="card-title">Overlord</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Play</a>
+                </div>
+                </div>
+                <!-- Card-end -->
+                <!-- Card-->
+                <div class="card bg-dark text-white me-2">
+                <img src="isekai2.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+                <div class="card-body">
+                <h5 class="card-title">No Game No Life</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Play</a>
+                </div>
+                </div>
+                <!-- Card-end -->
+                <!-- Card-->
+                <div class="card bg-dark text-white me-2">
+                <img src="isekai3.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+                <div class="card-body">
+                <h5 class="card-title">Shield-hero</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Play</a>
+                </div>
+                </div>
+                <!-- Card-end -->
+                <!-- Card-->
+                <div class="card bg-dark text-white me-2">
+                <img src="isekai4.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+                <div class="card-body">
+                <h5 class="card-title text-white">Sword art online</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Play</a>
+                </div>
+                </div>
+                <!-- Card-end -->
+                <!-- Card-->
+                <div class="card bg-dark text-white me-2">
+                <img src="isekai5.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+                <div class="card-body">
+                <h5 class="card-title">Re-Zero</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Play</a>
+                </div>
+                </div>
+                <!-- Card-end -->
+              </section>
+          </div>
+            <!--Second SLIDER-->
+          <div class="carousel-item">
+          <section class="d-flex">
+  
+            <!-- Card-->
+            <div class="card bg-dark text-white me-2">
+            <img src="isekai6.webp" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh"> 
+            <div class="card-body">
+            <h5 class="card-title">Moi quand je me réincarne en slime</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Play</a>
+            </div>
+          </div>
+            <!-- Card-end -->
+            <!-- Card-->
+            <div class="card bg-dark text-white me-2">
+            <img src="isekai7.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+            <div class="card-body">
+            <h5 class="card-title">LogHorizon</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Play</a>
+            </div>
+            </div>
+            <!-- Card-end -->
+            <!-- Card-->
+            <div class="card bg-dark text-white me-2">
+            <img src="isekai8.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+            <div class="card-body">
+            <h5 class="card-title">Girls in a Dungeon</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Play</a>
+            </div>
+            </div>
+            <!-- Card-end -->
+            <!-- Card-->
+            <div class="card bg-dark text-white me-2">
+            <img src="isekai9.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+            <div class="card-body">
+            <h5 class="card-title text-white">The Misfit of Demon king academy</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Play</a>
+            </div>
+            </div>
+            <!-- Card-end -->
+            <!-- Card-->
+            <div class="card bg-dark text-white me-2">
+            <img src="isekai10.webp" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+            <div class="card-body">
+            <h5 class="card-title">Gate</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Play</a>
+            </div>
+            </div>
+            <!-- Card-end -->
+            </section>
+          </div>
+          <!-- THIRD SECTION-->
+          <div class="carousel-item">
+            <section class="d-flex">
+  
+              <!-- Card-->
+              <div class="card bg-dark text-white me-2">
+              <img src="isekai11.webp" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh"> 
+              <div class="card-body">
+              <h5 class="card-title">Isekai-11</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Play</a>
+              </div>
+            </div>
+              <!-- Card-end -->
+              <!-- Card-->
+              <div class="card bg-dark text-white me-2">
+              <img src="isekai12.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+              <div class="card-body">
+              <h5 class="card-title">Darwing Game</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Play</a>
+              </div>
+              </div>
+              <!-- Card-end -->
+              <!-- Card-->
+              <div class="card bg-dark text-white me-2">
+              <img src="isekai13.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+              <div class="card-body">
+              <h5 class="card-title">Isekai-13</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Play</a>
+              </div>
+              </div>
+              <!-- Card-end -->
+              <!-- Card-->
+              <div class="card bg-dark text-white me-2">
+              <img src="isekai14.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+              <div class="card-body">
+              <h5 class="card-title text-white">Wise Man's Grandchild</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Play</a>
+              </div>
+              </div>
+              <!-- Card-end -->
+              <!-- Card-->
+              <div class="card bg-dark text-white me-2">
+              <img src="isekai15.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+              <div class="card-body">
+              <h5 class="card-title">Control</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Play</a>
+              </div>
+              </div>
+              <!-- Card-end -->
+              </section>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  
+      <!---->
+     
+
+    <!------------------------- caroussel 2: SHONEN   DEFAULT SUR CERTAINE DIV------------------------->
+    
+    <div class="container">
+      <h1 class="text-light"><b>Shonen</b></h1>
+      <div id="carouselExampleFade2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <section class="d-flex">
+              <!-- Card-->
+              <div class="card bg-dark text-white me-2">
+              <img src="shonen1.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+              <div class="card-body">
+                <h5 class="card-title">My Hero Academia</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Play</a>
+                </div>
+                </div>
+                <!-- Card-end -->
+                <!-- Card-->
+                <div class="card bg-dark text-white me-2" >
+                <img src="shonen2.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+                <div class="card-body">
+                <h5 class="card-title">Naruto</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Play</a>
+                </div>
+                </div>
+                <!-- Card-end -->
+                <!-- Card-->
+                <div class="card bg-dark text-white me-2">
+                <img src="shonen3.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+                <div class="card-body">
+                <h5 class="card-title">Dragon Ball</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Play</a>
+                </div>
+                </div>
+                <!-- Card-end -->
+                <!-- Card-->
+                <div class="card bg-dark text-white me-2">
+                <img src="shonen4.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+                <div class="card-body">
+                <h5 class="card-title text-white">Demon Slayer</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Play</a>
+                </div>
+                </div>
+                <!-- Card-end -->
+                <!-- Card-->
+                <div class="card bg-dark text-white me-2">
+                <img src="shonen5.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+                <div class="card-body">
+                <h5 class="card-title">Red is Dead</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Play</a>
+                </div>
+                </div>
+                <!-- Card-end -->
+                </section>
+          </div>
+            <!--Second SLIDER-->
+          <div class="carousel-item">
+            <section class="d-flex">
+            <!-- Card-->
+            <div class="card bg-dark text-white me-2">
+            <img src="shonen6.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh"> 
+            <div class="card-body">
+            <h5 class="card-title">Boriquito</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Play</a>
+            </div>
+          </div>
+            <!-- Card-end -->
+            <!-- Card-->
+            <div class="card bg-dark text-white me-2">
+            <img src="shonen7.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+            <div class="card-body">
+            <h5 class="card-title">Boruto</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Play</a>
+            </div>
+            </div>
+            <!-- Card-end -->
+            <!-- Card-->
+            <div class="card bg-dark text-white me-2">
+            <img src="shonen8.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+            <div class="card-body">
+            <h5 class="card-title">One Piece</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Play</a>
+            </div>
+            </div>
+            <!-- Card-end -->
+            <!-- Card-->
+            <div class="card bg-dark text-white me-2">
+            <img src="shonen9.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+            <div class="card-body">
+            <h5 class="card-title">Welcome You</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Play</a>
+            </div>
+            </div>
+            <!-- Card-end -->
+            <!-- Card-->
+            <div class="card bg-dark text-white me-2">
+            <img src="shonen10.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+            <div class="card-body">
+            <h5 class="card-title">Anybrother</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Play</a>
+            </div>
+            </div>
+            <!-- Card-end -->
+            </section>
+          </div>
+          <!-- THIRD SECTION-->
+          <div class="carousel-item">
+            <section class="d-flex">
+              <!-- Card-->
+              <div class="card bg-dark text-white me-2">
+              <img src="shonen11.webp" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh"> 
+              <div class="card-body">
+              <h5 class="card-title">Berserker</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Play</a>
+              </div>
+            </div>
+              <!-- Card-end -->
+              <!-- Card-->
+              <div class="card bg-dark text-white me-2">
+              <img src="shonen12.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+              <div class="card-body">
+              <h5 class="card-title">GI Joe</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Play</a>
+              </div>
+              </div>
+              <!-- Card-end -->
+              <!-- Card-->
+              <div class="card bg-dark text-white me-2">
+              <img src="shonen13.webp" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+              <div class="card-body">
+              <h5 class="card-title">Ultra Man</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Play</a>
+              </div>
+              </div>
+              <!-- Card-end -->
+              <!-- Card-->
+              <div class="card bg-dark text-white me-2">
+              <img src="shonen14.png" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+              <div class="card-body">
+              <h5 class="card-title">Aucun lien, fils unique</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Play</a>
+              </div>
+              </div>
+              <!-- Card-end -->
+              <!-- Card-->
+              <div class="card bg-dark text-white me-2">
+              <img src="shonen15.webp" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+              <div class="card-body">
+              <h5 class="card-title">Une histoire d'amour</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Play</a>
+              </div>
+              </div>
+              <!-- Card-end -->
+              </section>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    
+    <!------ Include the above in your HEAD tag ---------->
+
+    
+
+<!-- caroussel 3-->
+<div class="container">
+  <h1 class="text-light"><b>Romance avec un H</b></h1>
+  <div id="carouselExampleFade3" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <section class="d-flex">
+          <!-- Card-->
+          <div class="card bg-dark text-white me-2">
+          <img src="romance1.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+          <div class="card-body">
+            <h5 class="card-title">The girl standing in the blush of dawn</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Play</a>
+            </div>
+            </div>
+            <!-- Card-end -->
+            <!-- Card-->
+            <div class="card bg-dark text-white me-2" >
+            <img src="romance2.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+            <div class="card-body">
+            <h5 class="card-title">Frieren</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Play</a>
+            </div>
+            </div>
+            <!-- Card-end -->
+            <!-- Card-->
+            <div class="card bg-dark text-white me-2">
+            <img src="romance2.webp" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+            <div class="card-body">
+            <h5 class="card-title">Pao Haru Ride</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Play</a>
+            </div>
+            </div>
+            <!-- Card-end -->
+            <!-- Card-->
+            <div class="card bg-dark text-white me-2">
+            <img src="romance4.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+            <div class="card-body">
+            <h5 class="card-title text-white">Allison & Lillia</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Play</a>
+            </div>
+            </div>
+            <!-- Card-end -->
+            <!-- Card-->
+            <div class="card bg-dark text-white me-2">
+            <img src="romance5.webp" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+            <div class="card-body">
+            <h5 class="card-title">Spice and Wolf</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Play</a>
+            </div>
+            </div>
+            <!-- Card-end -->
+            </section>
+      </div>
+        <!--Second SLIDER-->
+      <div class="carousel-item">
+      <section class="d-flex">
+        <!-- Card-->
+        <div class="card bg-dark text-white me-2">
+        <img src="romance6.webp" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh"> 
+        <div class="card-body">
+        <h5 class="card-title">You lie in April</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Play</a>
+        </div>
+      </div>
+        <!-- Card-end -->
+        <!-- Card-->
+        <div class="card bg-dark text-white me-2">
+        <img src="romance7.webp" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+        <div class="card-body">
+        <h5 class="card-title">Hyouka</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Play</a>
+        </div>
+        </div>
+        <!-- Card-end -->
+        <!-- Card-->
+        <div class="card bg-dark text-white me-2">
+        <img src="romance8.webp" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+        <div class="card-body">
+        <h5 class="card-title">Violet Evergarden</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Play</a>
+        </div>
+        </div>
+        <!-- Card-end -->
+        <!-- Card-->
+        <div class="card bg-dark text-white me-2">
+        <img src="roma,ce.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+        <div class="card-body">
+        <h5 class="card-title text-white">Rascal Does not dream of bunny girl senpai</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Play</a>
+        </div>
+        </div>
+        <!-- Card-end -->
+        <!-- Card-->
+        <div class="card bg-dark text-white me-2">
+        <img src="romance10.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+        <div class="card-body">
+        <h5 class="card-title">The kawai complex</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Play</a>
+        </div>
+        </div>
+        <!-- Card-end -->
+        </section>
+      </div>
+      <!-- THIRD SECTION-->
+      <div class="carousel-item">
+        <section class="d-flex">
+          <!-- Card-->
+          <div class="card bg-dark text-white me-2">
+          <img src="romance11.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh"> 
+          <div class="card-body">
+          <h5 class="card-title">Beyond the Boundary</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Play</a>
+          </div>
+        </div>
+          <!-- Card-end -->
+          <!-- Card-->
+          <div class="card bg-dark text-white me-2">
+          <img src="romance12.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+          <div class="card-body">
+          <h5 class="card-title">Miss kobayashi's</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Play</a>
+          </div>
+          </div>
+          <!-- Card-end -->
+          <!-- Card-->
+          <div class="card bg-dark text-white me-2">
+          <img src="romance13.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+          <div class="card-body">
+          <h5 class="card-title">The ancient magus bride</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Play</a>
+          </div>
+          </div>
+          <!-- Card-end -->
+          <!-- Card-->
+          <div class="card bg-dark text-white me-2">
+          <img src="romance14.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+          <div class="card-body">
+          <h5 class="card-title text-white">Bloom int you</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Play</a>
+          </div>
+          </div>
+          <!-- Card-end -->
+          <!-- Card-->
+          <div class="card bg-dark text-white me-2">
+          <img src="romance25.jpg" class="card-img-top w-20" alt="..." style="width: 13vw; height: 40vh">
+          <div class="card-body">
+          <h5 class="card-title">Le garçon d'a côté/h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Play</a>
+          </div>
+          </div>
+          <!-- Card-end -->
+          </section>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+  
+</main>
+
+
+<!--------------------GABRIEL FOOTER------------------------------------------>
+  <footer class="bg-black px-5">
+    <div class="container-fluid mx-5 py-5 text-white-50 fs-4">Question? Call 1-444-555-9999
+      <div class="row my-3">
+        <div class="col-6">
+          <div class="row my-1">
+            <div class="col-3"><a href="#" class="text-decoration-none text-white-50 fs-6">FAQ</a></div>
+            <div class="col-3"><a href="#" class="text-decoration-none text-white-50 fs-6">Help Center</a></div>
+            <div class="col-3"><a href="#" class="text-decoration-none text-white-50 fs-6">Account</a></div>
+            <div class="col-3"><a href="#" class="text-decoration-none text-white-50 fs-6">Media center</a></div>
+          </div>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-6">
+          <div class="row my-1">
+            <div class="col-3"><a href="#" class="text-decoration-none text-white-50 fs-6">Investor Relations</a></div>
+            <div class="col-3"><a href="#" class="text-decoration-none text-white-50 fs-6">Jobs</a></div>
+            <div class="col-3"><a href="#" class="text-decoration-none text-white-50 fs-6">Redeem Gift Cards</a></div>
+            <div class="col-3"><a href="#" class="text-decoration-none text-white-50 fs-6">Buy Gift Cards</a></div>
+          </div>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-6">
+          <div class="row my-1">
+            <div class="col-3"><a href="#" class="text-decoration-none text-white-50 fs-6">Ways to Watch</a></div>
+            <div class="col-3"><a href="#" class="text-decoration-none text-white-50 fs-6">Terms of Use</a></div>
+            <div class="col-3"><a href="#" class="text-decoration-none text-white-50 fs-6">Privacy</a></div>
+            <div class="col-3"><a href="#" class="text-decoration-none text-white-50 fs-6">Cookie Preferences</a></div>
+          </div>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-6">
+          <div class="row my-1">
+            <div class="col-3"><a href="#" class="text-decoration-none text-white-50 fs-6">Corporate Information</a></div>
+            <div class="col-3"><a href="#" class="text-decoration-none text-white-50 fs-6">Contact Us</a></div>
+            <div class="col-3"><a href="#" class="text-decoration-none text-white-50 fs-6">Speed Test</a></div>
+            <div class="col-3"><a href="#" class="text-decoration-none text-white-50 fs-6">Legal Notices</a></div>
+          </div>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-6">
+          <div class="row mt-1 mb-5">
+            <div class="col-3"><a href="#" class="text-decoration-none text-white-50 fs-6">Animflix Originals</a></div>
+          </div>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-6">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle text-decoration-none text-white-50 border border-dark rounded p-3 bg-black fs-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-globe2 me-3" viewBox="0 0 16 16">
+                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855q-.215.403-.395.872c.705.157 1.472.257 2.282.287zM4.249 3.539q.214-.577.481-1.078a7 7 0 0 1 .597-.933A7 7 0 0 0 3.051 3.05q.544.277 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9 9 0 0 1-1.565-.667A6.96 6.96 0 0 0 1.018 7.5zm1.4-2.741a12.3 12.3 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332M8.5 5.09V7.5h2.99a12.3 12.3 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.6 13.6 0 0 1 7.5 10.91V8.5zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741zm-3.282 3.696q.18.469.395.872c.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a7 7 0 0 1-.598-.933 9 9 0 0 1-.481-1.079 8.4 8.4 0 0 0-1.198.49 7 7 0 0 0 2.276 1.522zm-1.383-2.964A13.4 13.4 0 0 1 3.508 8.5h-2.49a6.96 6.96 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667m6.728 2.964a7 7 0 0 0 2.275-1.521 8.4 8.4 0 0 0-1.197-.49 9 9 0 0 1-.481 1.078 7 7 0 0 1-.597.933M8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855q.216-.403.395-.872A12.6 12.6 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.96 6.96 0 0 0 14.982 8.5h-2.49a13.4 13.4 0 0 1-.437 3.008M14.982 7.5a6.96 6.96 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008zM11.27 2.461q.266.502.482 1.078a8.4 8.4 0 0 0 1.196-.49 7 7 0 0 0-2.275-1.52c.218.283.418.597.597.932m-.488 1.343a8 8 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
+              </svg>English
+            </button>
+            <ul class="dropdown-menu bg-black border border-dark rounded">
+              <li><a class="dropdown-item text-white-50 text-center fs-5" href="#">Français</a></li>
+              <li><a class="dropdown-item text-white-50 text-center fs-5" href="#">Español</a></li>
+              <li><a class="dropdown-item text-white-50 text-center fs-5" href="#">日本语</a></li>
+              <li><a class="dropdown-item text-white-50 text-center fs-5" href="#">لغة</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> 
+<!--------------------GABRIEL FOOTER------------------------------------------>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
